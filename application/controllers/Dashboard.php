@@ -97,6 +97,7 @@ class Dashboard extends My_Controller
       $data = $this->Models->showdata("[GetPaymentPie] '" . $outlet . "','" . $bulan . "','" . $tahun . "'");
     } else {
       $data = array('Data Kosong');
+      $echo = "hajaj";
     }
     echo json_encode($data);
   }
