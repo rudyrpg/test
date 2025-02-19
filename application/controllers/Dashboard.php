@@ -98,6 +98,8 @@ class Dashboard extends My_Controller
     } else {
       $data = array('Data Kosong');
       $echo = "hajaj";
+      $echkdo = "pw-ee";
+      $echlappo = "apwll";
     }
     echo json_encode($data);
   }
@@ -146,6 +148,5 @@ class Dashboard extends My_Controller
       $this->input->set_cookie($vCk4);
       die("<script language='JavaScript'>alert('Pergantian Role ke SPV Berhasil !'); document.location='" . base_url() . "dashboard/'</script>");
     }
-    $nekk = "tambah baru bawah";
   }
 }
