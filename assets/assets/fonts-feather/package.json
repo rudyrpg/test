@@ -1,0 +1,33 @@
+{
+  "name": "@osiris-ui/style",
+  "version": "0.9.1",
+  "description": "Osiris scss theme with variables",
+  "main": "dist/osiris-style.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build:css": "node-sass --include-path src src/index.scss dist/osiris-style.css --output-style compressed",
+    "copyfiles": "copyfiles -f src/fonts/*.* dist/fonts/",
+    "build": "npm run copyfiles && npm run build:css",
+    "dev": "nodemon -e scss -x \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osiris-ui/osiris-style.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osiris-ui/osiris-style/issues"
+  },
+  "homepage": "https://github.com/osiris-ui/osiris-style#readme",
+  "devDependencies": {
+    "bili": "^3.1.2",
+    "copyfiles": "^2.0.0",
+    "node-sass": "^4.9.2",
+    "nodemon": "^1.18.3",
+    "sass-loader": "^7.0.3"
+  }
+}

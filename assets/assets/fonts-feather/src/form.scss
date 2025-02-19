@@ -1,0 +1,59 @@
+@import 'variables';
+
+.o-form {
+  display: block;
+}
+
+.o-form-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  &__content {
+    flex: 1 1 auto;
+  }
+
+  &__label {
+    color: $color-text-regular;
+    margin-right: 1rem;
+  }
+
+  &__error {
+    position: absolute;
+    color: $color-danger;
+    font-size: .7rem;
+    display: block
+  }
+}
+
+.o-form--top {
+  .o-form-item {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__label {
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+.o-form--left {
+  .o-form-item {
+    justify-content: flex-start;
+
+    &__label {
+      text-align: left;
+    }
+  }
+}
+
+.o-form--right {
+  .o-form-item {
+    justify-content: flex-end;
+
+    &__label {
+      text-align: right;
+    }
+  }
+}

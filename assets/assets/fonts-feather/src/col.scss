@@ -1,0 +1,125 @@
+@import 'variables';
+
+.o-col-0 {
+  flex: 0 0 auto;
+}
+
+.o-col-offset-0 {
+  margin-left: 0;
+}
+
+@for $i from 1 through 24 {
+  .o-col-#{$i} {
+    flex: 0 0 auto;
+    flex-basis: $base-width * $i;
+    max-width: $base-width * $i;
+  }
+  .o-col-offset-#{$i} {
+    margin-left: $base-width * $i;
+  }
+}
+
+@media screen and (max-width: $xs-breaking-point) {
+  .o-col-xs-0 {
+    flex: 0 0 auto;
+  }
+
+  .o-col-xs-offset-0 {
+    margin-left: 0;
+  }
+
+  @for $i from 1 through 24 {
+    .o-col-xs-#{$i} {
+      flex-basis: $base-width * $i;
+      max-width: $base-width * $i;
+    }
+
+    .o-col-xs-offset-#{$i} {
+      margin-left: $base-width * $i;
+    }
+  }
+}
+
+@media screen and (min-width: $sm-breaking-point) {
+  .o-col-sm-0 {
+    flex: 0 0 auto;
+  }
+
+  .o-col-sm-offset-0 {
+    margin-left: 0;
+  }
+
+  @for $i from 1 through 24 {
+    .o-col-sm-#{$i} {
+      flex-basis: $base-width * $i;
+      max-width: $base-width * $i;
+    }
+
+    .o-col-sm-offset-#{$i} {
+      margin-left: $base-width * $i;
+    }
+  }
+}
+
+@media screen and (min-width: $md-breaking-point) {
+  .o-col-md-0 {
+    flex: 0 0 auto;
+  }
+
+  .o-col-md-offset-0 {
+    margin-left: 0;
+  }
+
+  @for $i from 1 through 24 {
+    .o-col-md-#{$i} {
+      flex-basis: $base-width * $i;
+      max-width: $base-width * $i;
+    }
+
+    .o-col-md-offset-#{$i} {
+      margin-left: $base-width * $i;
+    }
+  }
+}
+
+@media screen and (min-width: $lg-breaking-point) {
+  .o-col-lg-0 {
+    flex: 0 0 auto;
+  }
+
+  .o-col-lg-offset-0 {
+    margin-left: 0;
+  }
+
+  @for $i from 1 through 24 {
+    .o-col-lg-#{$i} {
+      flex-basis: $base-width * $i;
+      max-width: $base-width * $i;
+    }
+
+    .o-col-lg-offset-#{$i} {
+      margin-left: $base-width * $i;
+    }
+  }
+}
+
+@media screen and (min-width: $xl-breaking-point) {
+  .o-col-xl-0 {
+    flex: 0 0 auto;
+  }
+
+  .o-col-xl-offset-0 {
+    margin-left: 0;
+  }
+
+  @for $i from 1 through 24 {
+    .o-col-xl-#{$i} {
+      flex-basis: $base-width * $i;
+      max-width: $base-width * $i;
+    }
+
+    .o-col-xl-offset-#{$i} {
+      margin-left: $base-width * $i;
+    }
+  }
+}

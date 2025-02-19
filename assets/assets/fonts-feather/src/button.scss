@@ -1,0 +1,329 @@
+@import 'variables';
+
+.o-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  color: $color-text-regular;
+  border: 1px solid $color-border-light;
+  background: #FFF;
+  border-radius: 3px;
+  padding: 1rem 3rem;
+
+  &.is-disabled {
+    cursor: not-allowed;
+    background-color: mix(#FFF, $color-primary, 50%);
+    border-color: mix(#FFF, $color-border-light, 16%);
+    color: mix(#FFF, $color-text-regular, 50%);
+  }
+
+  &.o-button--default {
+
+    &:hover, &:active {
+      background-color: mix(#FFF, $color-primary, 90%);
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+
+    &.is-plain {
+      border-color: $color-border-light;
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      border-color: $color-primary;
+      background-color: #FFF;
+      color: $color-primary;
+    }
+
+    &.is-disabled, .is-disabled:hover, .is-disabled:active {
+      background-color: #FFF;
+      border-color: mix(#FFF, $color-border-light, 16%);
+      color: mix(#FFF, $color-text-regular, 70%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, .is-plain.is-disabled:active {
+      background-color: #FFF;
+      border-color: mix(#FFF, $color-border-light, 16%);
+      color: mix(#FFF, $color-text-regular, 70%);
+    }
+  }
+
+  &.o-button--primary {
+    color: #FFF;
+    background-color: $color-primary;
+    border-color: $color-primary;
+    &:hover, &:focus {
+      background-color: mix(#FFF, $color-primary, 25%);
+      border-color: mix(#FFF, $color-primary, 25%);
+    }
+
+    &:active, &:visited {
+      background-color: darken($color-primary, 6%);
+      border-color: darken($color-primary, 6%);
+    }
+
+    &.is-plain {
+      color: $color-primary;
+      background-color: mix(#FFF, $color-primary, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-primary, 6%);
+      border-color: mix(#FFF, $color-primary, 6%);
+      color: #FFF;
+    }
+
+    &.is-disabled, .is-disabled:hover, &.is-disabled:active {
+      background-color: mix(#FFF, $color-primary, 50%);
+      border-color: mix(#FFF, $color-primary, 50%);
+      color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-primary, 50%);
+      background-color: mix(#FFF, $color-primary, 95%);
+      border-color: mix(#FFF, $color-primary, 70%);
+    }
+  }
+
+  &.o-button--secondary {
+    color: #FFF;
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    &:hover, &:focus {
+      background-color: mix(#FFF, $color-secondary, 25%);
+      border-color: mix(#FFF, $color-secondary, 25%);
+    }
+
+    &:active, &:visited {
+      background-color: darken($color-secondary, 6%);
+      border-color: darken($color-secondary, 6%);
+    }
+
+    &.is-plain {
+      color: $color-secondary;
+      background-color: mix(#FFF, $color-secondary, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-secondary, 6%);
+      border-color: mix(#FFF, $color-secondary, 6%);
+      color: #FFF;
+    }
+
+    &.is-disabled, .is-disabled:hover, &.is-disabled:active {
+      background-color: mix(#FFF, $color-secondary, 50%);
+      border-color: mix(#FFF, $color-secondary, 50%);
+      color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-secondary, 50%);
+      background-color: mix(#FFF, $color-secondary, 95%);
+      border-color: mix(#FFF, $color-secondary, 70%);
+    }
+  }
+
+  &.o-button--info {
+    color: #FFF;
+    background-color: $color-info;
+    border-color: $color-info;
+    &:hover, &:focus {
+      background-color: mix(#FFF, $color-info, 25%);
+      border-color: mix(#FFF, $color-info, 25%);
+    }
+
+    &:active, &:visited {
+      background-color: darken($color-info, 6%);
+      border-color: darken($color-info, 6%);
+    }
+
+    &.is-plain {
+      color: $color-info;
+      background-color: mix(#FFF, $color-info, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-info, 6%);
+      border-color: mix(#FFF, $color-info, 6%);
+      color: #FFF;
+    }
+
+    &.is-disabled, .is-disabled:hover, &.is-disabled:active {
+      background-color: mix(#FFF, $color-info, 50%);
+      border-color: mix(#FFF, $color-info, 50%);
+      color: darken(#FFF, 2%);
+    }
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-info, 50%);
+      background-color: mix(#FFF, $color-info, 95%);
+      border-color: mix(#FFF, $color-info, 70%);
+    }
+  }
+
+  &.o-button--success {
+    color: #FFF;
+    background-color: $color-success;
+    border-color: $color-success;
+    &:hover, &:focus {
+      background-color: mix(#FFF, $color-success, 25%);
+      border-color: mix(#FFF, $color-success, 25%);
+    }
+
+    &:active, &:visited {
+      background-color: darken($color-success, 6%);
+      border-color: darken($color-success, 6%);
+    }
+
+    &.is-plain {
+      color: $color-success;
+      background-color: mix(#FFF, $color-success, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-success, 6%);
+      border-color: mix(#FFF, $color-success, 6%);
+      color: #FFF;
+    }
+
+    &.is-disabled, .is-disabled:hover, &.is-disabled:active {
+      background-color: mix(#FFF, $color-success, 50%);
+      border-color: mix(#FFF, $color-success, 50%);
+      color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-success, 50%);
+      background-color: mix(#FFF, $color-success, 95%);
+      border-color: mix(#FFF, $color-success, 70%);
+    }
+  }
+
+  &.o-button--warning {
+    color: #FFF;
+    background-color: $color-warning;
+    border-color: $color-warning;
+    &:hover, &:focus {
+      background-color: mix(#FFF, $color-warning, 25%);
+      border-color: mix(#FFF, $color-warning, 25%);
+    }
+
+    &:active, &:visited {
+      background-color: darken($color-warning, 6%);
+      border-color: darken($color-warning, 6%);
+    }
+
+    &.is-plain {
+      color: $color-warning;
+      background-color: mix(#FFF, $color-warning, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-warning, 6%);
+      border-color: mix(#FFF, $color-warning, 6%);
+      color: #FFF;
+    }
+
+    &.is-disabled, .is-disabled:hover, &.is-disabled:active {
+      background-color: mix(#FFF, $color-warning, 50%);
+      border-color: mix(#FFF, $color-warning, 50%);
+      color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-warning, 50%);
+      background-color: mix(#FFF, $color-warning, 95%);
+      border-color: mix(#FFF, $color-warning, 70%);
+    }
+  }
+
+  &.o-button--danger {
+    color: #FFF;
+    background-color: $color-danger;
+    border-color: $color-danger;
+    &:hover, &:focus {
+      background-color: mix(#FFF, $color-danger, 25%);
+      border-color: mix(#FFF, $color-danger, 25%);
+    }
+
+    &:active, &:visited {
+      background-color: darken($color-danger, 6%);
+      border-color: darken($color-danger, 6%);
+    }
+
+    &.is-plain {
+      color: $color-danger;
+      background-color: mix(#FFF, $color-danger, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-danger, 6%);
+      border-color: mix(#FFF, $color-danger, 6%);
+      color: #FFF;
+    }
+
+    &.is-disabled, .is-disabled:hover, &.is-disabled:active {
+      background-color: mix(#FFF, $color-danger, 50%);
+      border-color: mix(#FFF, $color-danger, 50%);
+      color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-danger, 50%);
+      background-color: mix(#FFF, $color-danger, 95%);
+      border-color: mix(#FFF, $color-danger, 70%);
+    }
+  }
+
+  &.o-button--text {
+    color: $color-primary;
+    background-color: transparent;
+    border-color: transparent;
+    &:hover, &:focus {
+      color: mix(#FFF, $color-primary, 25%);
+      outline: none;
+    }
+
+    &:active, &:visited {
+      color: darken($color-primary, 10%);
+      outline: none;
+    }
+
+    &.is-disabled, .is-disabled:hover, &.is-disabled:active {
+      color: mix(#FFF, $color-text-regular, 70%);
+    }
+  }
+
+  &.o-button--mini {
+    padding: .3rem .9rem;
+  }
+
+  &.o-button--small {
+    padding: .5rem 1.5rem;
+  }
+
+  &.o-button--normal {
+    padding: 1rem 3rem;
+  }
+
+  &.o-button--large {
+    padding: 1.25rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  &.is-round {
+    border-radius: 100px;
+  }
+
+  &.is-circle {
+    padding: 0rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+}
+
+.o-button + .o-button {
+  margin-left: .5rem;
+}

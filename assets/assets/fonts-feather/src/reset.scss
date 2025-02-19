@@ -1,0 +1,143 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  letter-spacing: 0;
+  line-height: #{$font-size-base + 8px};
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: darken($color-primary, 6%);
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: $color-text-primary;
+  font-weight: $font-weight-strong;
+}
+
+.h1 {
+  font-size: 1.7rem !important;
+  line-height: 2.4rem !important;
+}
+
+h1 {
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+
+.h2 {
+  font-size: 1.5rem !important;
+  line-height: 2.2rem !important;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.h3 {
+  font-size: 1.3rem !important;
+  line-height: 1.9rem !important;
+}
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+
+.h4 {
+  font-size: 1.2rem !important;
+  line-height: 1.8rem !important;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.h5 {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+h5 {
+  font-size: 1.1rem !important;
+  line-height: 1.7rem !important;
+}
+
+.h6 {
+  font-size: 1rem !important;
+  line-height: 1.6rem !important;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: $font-weight-base;
+  letter-spacing: 0;
+  color: $color-text-primary;
+  line-height: 1.5rem;
+}
+
+small {
+  font-size: $font-size-base;
+  letter-spacing: 0;
+  color: $color-border-normal;
+  line-height: #{$font-size-small + 8px};
+}
+
+.small {
+  font-size: $font-size-small;
+  font-weight: $font-weight-base;
+  letter-spacing: 0;
+  line-height: #{$font-size-small + 8px};
+}
+
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid $color-border-lighter;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.color-info {
+  color: $color-info;
+}
+
+.color-success {
+  color: $color-success;
+}
+
+.color-warning {
+  color: $color-warning;
+}
+
+.color-danger {
+  color: $color-danger;
+}
