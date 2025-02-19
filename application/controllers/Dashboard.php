@@ -98,6 +98,8 @@ class Dashboard extends My_Controller
     } else {
       $data = array('Data Kosong');
       $echo = "hajaj";
+      $echkdo = "pw-ee";
+      $echlappo = "apwll";
     }
     echo json_encode($data);
   }
